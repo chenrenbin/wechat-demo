@@ -1,0 +1,71 @@
+@import '../../../assets/wxss/var.scss';
+@import '/assets/iconfont/stylesheet.wxss';
+
+.level-card{
+    .item{
+        margin-top: 30rpx;
+        border-radius: $radius;
+        background-color: $white;
+        display: flex;
+        flex-direction: row;
+        .left{
+            width: 40%;
+            height: 0;
+            padding-bottom: 40%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: $radius 0 0 $radius;
+        }
+        .right{
+            width: 60%;
+            padding: 20rpx 25rpx;
+            position: relative;
+            .title{
+                color: $black;
+                font-size: $xxl;
+                font-weight: 500;
+                text-align: justify;
+                display:-webkit-box; //作为弹性伸缩盒子模型显示。
+                -webkit-box-orient:vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                -webkit-line-clamp:2; //显示的行
+                overflow: hidden;
+            }
+            .des{
+                color: $gray;
+                font-size: $xl;
+                margin-top: 35rpx;
+                display:-webkit-box; //作为弹性伸缩盒子模型显示。
+                -webkit-box-orient:vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                -webkit-line-clamp:1; //显示的行
+                overflow: hidden;
+            }
+            .other{
+                width: 90%;
+                margin-top: 8rpx;
+                position: absolute;
+                left: 20rpx;
+                bottom: 20rpx;
+                .one{
+                    color: $red;
+                    font-size: $l;
+                }
+                .two{
+                    color: $lightGray;
+                    font-size: $l;
+                    margin-left: 10rpx;
+                }
+                .iconfont{
+                    color: $lightRed;
+                    font-size: $xl;
+                    font-weight: 600;
+                    padding: 0 10rpx;
+                    float: right;
+                    position: relative;
+                    top:-5rpx;
+                }
+            }
+        }
+    }
+}
+

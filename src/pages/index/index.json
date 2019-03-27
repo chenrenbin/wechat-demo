@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "vertical-card": "/components/product/verticalCard/index",
+    "level-card": "/components/product/levelCard/index"
+  }
+}

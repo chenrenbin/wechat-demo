@@ -1,0 +1,16 @@
+/**app.wxss**/
+@import 'assets/iconfont/stylesheet.wxss';
+page{
+  background-image: -webkit-linear-gradient(#000, #FFF);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}

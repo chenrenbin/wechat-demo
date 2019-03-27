@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="tabBar-index">
+    <navigator class="search" url="/page/sort/index"><icon type="search" size="20" color="#fff"/>搜索</navigator>
+    <scroll-view scroll-x class="navBar-list">
+        <navigator id="navBar{{index}}" class="{{index===1 ? 'select' : ''}}" wx:for="{{navBars}}" url="{{item.value}}" open-type="redirect">{{item.label}}</navigator>
+    </scroll-view>
+</view>
+
+<view class="productList">
+    <scroll-view scroll-x class="filters">
+        <view id="filter{{index}}" class="item {{index===0 ? 'select' : ''}}" wx:for="{{filers}}">{{item.label}}</view>
+        <view class="iconfont {{listStyle==='vertical' ? 'icon-fenlei1' : 'icon-fenlei2'}}" bindtap="changeListStyle"></view>
+    </scroll-view>
+    <scroll-view id="product-list" scroll-y style="height:{{scrollViewHeight}}px" class="product-list">
+        <block wx:if="{{listStyle==='vertical'}}">
+            <vertical-card data="{{list}}"></vertical-card>
+        </block>
+        <block wx:else>
+            <level-card  data="{{list}}"></level-card>
+        </block>
+    </scroll-view>
+</view>
+

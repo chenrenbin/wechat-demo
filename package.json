@@ -1,0 +1,20 @@
+{
+  "name": "wechat-demo",
+  "version": "1.0.0",
+  "description": "this demo by gulp\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dbuild by \u001b[D\u001b[D\u001b[D\u001b[t\u001b[C\u001b[C\u001b[C\u001b[Cgulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chenrenbin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-tap": "^1.0.1"
+  }
+}

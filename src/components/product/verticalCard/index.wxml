@@ -1,0 +1,14 @@
+
+<view class='verticla-card defined-class'>
+  <block wx:for="{{data}}">
+    <view class='item' data-url="{{item.id}}" bindtap="goDetail">
+      <view class="top" style="background-image: url({{item.image}})"></view>
+      <view class="bottom">
+        <text class="title">{{item.name}}</text>
+        <text class="des">{{item.des}}</text>
+        <view class="other"><text class="one">{{item.money}}</text><text class="two">{{item.num}}人付款</text><icon class="iconfont icon-gouwuche"></icon></view>
+      </view>
+    </view>
+  </block>
+</view>
+
